@@ -22,3 +22,19 @@ Este projeto é uma API RESTful escrita em Go (Golang), utilizando o framework [
 - JSON nativo para serialização
 
 ---
+
+📬 Endpoints da API
+| Método | Endpoint          | Descrição                     |
+| ------ | ----------------- | ----------------------------- |
+| POST   | `/api/users`      | Cria um novo usuário          |
+| GET    | `/api/users`      | Retorna todos os usuários     |
+| GET    | `/api/users/{id}` | Retorna um usuário por ID     |
+| PUT    | `/api/users/{id}` | Atualiza um usuário existente |
+| DELETE | `/api/users/{id}` | Remove um usuário por ID      |
+
+---
+
+🧠 Observações
+Os dados dos usuários são armazenados em memória (não persistem entre execuções).
+
+O campo id é gerado automaticamente via UUID.
